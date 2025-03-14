@@ -12,7 +12,7 @@ int main(void)
 #if PERFT
 	perft_run();
 #else
-	uci_run("RepetitionV4", "akuijer nleusden lbartels");
+	uci_run("PrimaBot", "akuijer nleusden lbartels");
 #endif
 
 	return EXIT_SUCCESS;
