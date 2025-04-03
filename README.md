@@ -1,28 +1,11 @@
-# Example bot
-
-This code serves as the boilerplate code that everyone in the MINOR league is
-allowed to copy. Although you could probably do this hackathon without ever
-taking a look at most of the code. I would advise you to go through it as it
-contains many tips to improve your bot.
-
-## Where should I begin?
-The eval function is in `src/evaluate.c`, it very primitive. You should probably
-improve that :)
+This project is a fork of a hackathon made chessbot, rolled back to a *working* branch.
+It was built upon boilerplate code, and converted to C++ by my team.
+The bot can still be improved and I will try to do so.
 
 
-Also the searching currently is limited to depth 4 in `src/search.h`, while this
-probably will work in the tournament (no guarantees). You probably will want to
-somehow keep track of the time spent searching.
+Has implemented:
 
-## Major League
-For people in the major league, you are allowed to copy only and absolutely only
-the code for handling UCI and FENs. See src/uci.c and src/position.c.
-
-## TODO
-* pruning verbeteren (optioneel)
-* Evaluatie functie researchen
-* King safety
-* Activity (heatmap)
-* Castle rights houden
-* Phases heat maps
-* Grandmaster openings vinden
+* Alpha-Beta pruning
+* Hashing of moves
+* Heatmap for mid/late game
+* piece capture calculations that impact score
